@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <color name="divider_color">#E3E4E8</color> -->
+    <!-- <color name="gray_background">#f4f4f6</color> -->
+
+
+    <color name="divider_color">#D8D8D8</color>
+    <color name="gray">#C1C1C1</color>
+    <color name="blue_fancy">#7CA7D3</color>
+    <color name="gray_background">#f4f4f6</color>
+    <color name="gray_button_background">#f0f0f0</color>
+    <color name="gray_button_border">#c9c9c9</color>
+    <color name="gray_light_color">#8f95a3</color>
+    <color name="gray_dark">#999999</color>
+    <color name="black">#606571</color>
+    <color name="black_deep">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="menu_background_color">#3f3f3f</color>
+    <color name="purple">#01455a</color>
+    <color name="red">#C00000</color>
+    <color name="green">#6ea935</color>
+    <color name="green_dark">#013220</color>
+    <color name="gold_color">#b88718</color>
+    <color name="purple_light">#016b8c</color>
+    <color name="sky_blue">#3199e0</color>
+    <color name="profile_img_background_color">#E2E2E2</color>
+    <color name="profile_list_select_color">#E3E3E3</color>
+    <color name="blue_light">#009AEE</color>
+    <color name="blue_dark">#003471</color>
+    <color name="black_lite">#585858</color>
+    <color name="res_red">#ff5151</color>
+
+    <color name="iron">#CCCCCC</color>
+
+    <color name="purple_medium">#015873</color>
+    <color name="translucent_scrim_top">#1A000000</color>
+    <color name="translucent_scrim_top_center">#0C000000</color>
+    <color name="translucent_scrim_bottom">#40000000</color>
+    <color name="translucent_scrim_bottom_center">#26000000</color>
+
+</resources>

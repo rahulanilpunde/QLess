@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txtmenu"
+        android:paddingTop="50dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtwelcome"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BackBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="53dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1 Burger, 1 Soft Drink"
+        android:id="@+id/textView"
+        android:layout_below="@+id/txtmenu"
+        android:layout_toStartOf="@+id/back"
+        android:layout_marginTop="60dp"
+        android:layout_alignRight="@+id/txtuser"
+        android:layout_alignEnd="@+id/txtuser" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="3 Burgers, 3 Soft Drinks"
+        android:id="@+id/textView2"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="7 Burgers, 7 Soft Drinks"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="51dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:id="@+id/order1"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/back"
+        android:layout_toEndOf="@+id/back" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:id="@+id/order2"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/order1"
+        android:layout_alignStart="@+id/order1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="order"
+        android:id="@+id/button3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/order2"
+        android:layout_alignStart="@+id/order2" />
+
+</RelativeLayout>

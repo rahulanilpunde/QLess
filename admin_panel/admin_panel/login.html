@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>login </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+<!--section sart--->
+      <section id="main_section">
+          <div class="container ">	
+		  <div class="row">
+		  <div class="col-md-3"></div>
+			<div class="col-md-6 ">
+		  
+		<div class="panel panel-default login_panel">
+		  <div class="panel-heading">
+			<h3 class="panel-title">ADMIN PANEL </h3>
+		  </div>
+		  <div class="panel-body">
+			<form>
+			  <div class="form-group">			
+				<input type="text" class="form-control" id="lid" placeholder="Email">
+			  </div>
+			  <div class="form-group">			
+				<input type="password" class="form-control" id="pwd" placeholder="Password">
+			  </div>
+			  <div class="form_checkbox"><input type="checkbox" name="checkbox"><span>keep me logged in</span> <p><a href="forgot_pass.html" title="Forgot Password?">Forgot Password?</a></p></div>
+			  
+			  <button type="button" class="btn btn-primary btn-small" onclick="myFunction()">Login</button>
+ 			</form>
+		  </div>
+		</div>	
+	</div>
+	 <div class="col-md-3"></div>
+	</div></div>
+      </section>   
+<!--section end--->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+	<script type="text/javascript">
+ function myFunction(){
+ //alert("Workting");
+ var login=$("#lid").val();
+  var pwd=$("#pwd").val();
+
+  //alert(login);
+ Parse.initialize("L7sHCHJgx5vE7wTew2PViesoY5R9rJvKijmNpaPS", "RZn3pq8Vfvs4X78cyDnM0YR9hexqF3aj0lHIfFU5"); 
+ // Parse.initialize("L7sHCHJgx5vE7wTew2PViesoY5R9rJvKijmNpaPS", "ckEf789GCLvT7DmhDwntgvwqwwLQErU16baoDWpD");
+
+ var GameScore = Parse.Object.extend("adminCredentials");
+var query = new Parse.Query(GameScore);
+
+query.equalTo("name", login);
+query.equalTo("password",pwd);
+query.find({
+  success: function(results) {
+  if(results.length >0)
+  location.href = 'item_list.html';
+    //alert("Successfully Logged in");
+	else
+	alert("Incorrect Login");
+    // Do something with the returned Parse.Object values
+    
+  },
+  error: function(error) {
+    alert("Error: " + error.code + " " + error.message);
+  }
+});
+event.preventDefault();
+
+ }
+</script>
+  </body>
+</html>

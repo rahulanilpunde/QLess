@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="3dip"
+    android:paddingRight="3dip"
+    android:paddingTop="3dip">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgItems"
+                android:layout_width="65dip"
+                android:layout_height="65dip"
+                android:scaleType="fitXY" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/imgItems"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dip"
+                    android:text="Customer"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cname"
+                    android:layout_toRightOf="@+id/countrylabel"
+                    android:padding="2dip"
+                    android:text="Customer"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/ptime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order"
+                    android:layout_toRightOf="@+id/countrylabel1"
+                    android:padding="2dip"
+                    android:text="Customer"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/atime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ptime"
+                    android:layout_toRightOf="@+id/countrylabel2"
+                    android:padding="2dip"
+                    android:text="Customer Customer Customer Customer Customer CustomerCustomer Customer Customer"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout><!-- From: file:/C:/Users/Sargam/Desktop/final/Parse-Starter-Project-1.10.3/ParseStarterProject/src/main/res/layout/o_listview_item.xml -->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/inc_toolbar" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        style="@style/TextViewStyleMedium"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dip"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="Place Order"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/TextViewStyleMedium"
+        android:layout_above="@id/btnConfirm"
+        android:layout_marginTop="10dip"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="Cancel"
+        android:textColor="@color/white" />
+
+    <ListView
+        android:id="@+id/listProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/btnCancel"
+        android:layout_below="@id/linearToolbar"/>
+
+
+</RelativeLayout>

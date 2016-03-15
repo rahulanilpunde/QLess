@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Customers</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+
+    <![endif]-->
+	
+	
+  </head>
+  <body>
+      
+      
+<!--section sart--->
+      <section id="main_section">
+         <div class="container">	
+		 <div class="row">
+			<div class="col-md-12">
+		<div class="panel panel-default login_panel">
+		  <div class="panel-heading">
+			<h3 class="panel-title">Customers</h3>
+		  </div>
+		  <div class="panel-body">
+			<div class="col-md-12">
+			 
+			  <a href="item_list.html" title="Back" id="myBtn" class="btn back_but register-form btn-primary btn-small">Back</a>
+		  </div>
+		  <div class="col-md-3"> </div>
+
+		  <div class="col-md-6 cont_midd_list">
+			 <div class="">
+                        <ul class="item_list_container"></ul>         
+                  </div>
+				  </div>
+				  <div class="col-md-3"> </div>
+				   <div class="btn-group btn-toggle">      
+ 
+		  </div>
+		</div>	
+            
+	</div></div></div>
+      </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+
+    <script>
+	 
+	 
+/*
+$('form').submit(function(){
+    return false;	alert($(this["options"]).val());
+
+});*/ 
+    $( document ).ready(function() {
+	//alert("hi");
+ Parse.initialize("L7sHCHJgx5vE7wTew2PViesoY5R9rJvKijmNpaPS", "RZn3pq8Vfvs4X78cyDnM0YR9hexqF3aj0lHIfFU5"); 
+ // Parse.initialize("L7sHCHJgx5vE7wTew2PViesoY5R9rJvKijmNpaPS", "ckEf789GCLvT7DmhDwntgvwqwwLQErU16baoDWpD");
+	
+ var GameScore = Parse.Object.extend("Customer");
+var query = new Parse.Query(GameScore);
+query.find({
+  success: function(results) {
+  if(results.length >0){
+	$.each(results,function(i,item){
+	var orders= JSON.stringify(item);
+	var order= $.parseJSON(orders);
+	 //if(order.status=="active") var st = "active";
+	var content='<li> <div class="info info_available"><h3><span>'+order.username+'</span></h3><strong>Status : '+order.status+'</strong></div> <div class="btn-group btn-toggle '+order.username+' "  >     <input type="hidden" class="user" value="'+order.username+'">  <button class="btn btn-sm btn-default  "  value="active"  >Active</button>    <button class="btn btn-sm btn-primary " value="blocked" checked="checked" >Blocked</button>  </div>		</li>';
+	$('.item_list_container').append(content);
+	if(order.status=="active")
+	    	$("."+order.username).find('.btn').toggleClass('btn-primary');
+
+	console.log(order);
+	});
+	}else
+	alert("No orders found");
+  },
+  error: function(error) {
+    alert("Error: " + error.code + " " + error.message);
+  }
+});
+
+
+
+// Create a pointer to an object of class Point with id dlkj83d
+event.preventDefault();
+    });
+    </script>
+		<script>
+ 
+ 	$("body").on("click", ".btn-toggle", function() {
+     
+   if ($(this).find('.btn-primary').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-primary');
+ 
+		 var v=$(this).find('.btn-primary').val();
+ 		 		 var vv=$(this).find('.user').val();
+  	var g = Parse.Object.extend("Customer");
+
+	 var query = new Parse.Query(g);
+                    query.equalTo("username",vv); 
+
+                    query.first({
+                        success: function (Contact) {
+						
+ 
+                            Contact.save(null, {
+                                success: function (Contact) {
+                                     Contact.set('status', v);
+ 
+                                    Contact.save();
+                                },
+  error: function(gameScore, error) {
+    // Execute any logic that should take place if the save fails.
+    // error is a Parse.Error with an error code and message.
+    alert('Failed to create new object, with error code: ' + error.message);
+  }
+});
+                        }
+                    });
+	
+	
+		 
+    }
+     
+});
+ 
+	</script>
+  </body>
+</html>

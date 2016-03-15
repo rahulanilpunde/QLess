@@ -1,0 +1,32 @@
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {margin: 0;	padding: 0;}
+img, fieldset {	border: 0;}
+/* set image max width to 100% */
+img {height: auto;}
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {   display: block;}
+/** General Styling **/
+body {font: normal 12px Arial, Helvetica, sans-serif;color: #666;margin:0px; padding:0;overflow-x: hidden;}
+a {text-decoration: none;outline: none;}
+p {	margin: 0;	padding: 0;}
+/* list */
+/* reset webkit search input styles */
+input[type=search] {-webkit-appearance: none;outline: none;}
+/*input[type="search"]::-webkit-search-decoration, 
+input[type="search"]::-webkit-search-cancel-button {display: none;}*/
+a:hover { text-decoration:none;}
+li,ul{list-style: outside none none;
+    margin: 0;
+    padding: 0;}
+
+
+.clearfix:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;	height: 0;}
+.clearfix {display: inline-block;}
+
+html[xmlns] .clearfix {	display: block;}
+* html .clearfix {	height: 1%;}

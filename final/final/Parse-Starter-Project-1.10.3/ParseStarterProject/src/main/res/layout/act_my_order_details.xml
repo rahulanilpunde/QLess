@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/inc_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dip">
+
+
+            <ImageView
+                android:id="@+id/imgItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <TextView
+                style="@style/TextViewWrapMed"
+                android:text="Item Name:" />
+
+            <TextView
+                android:id="@+id/txtItemName"
+                style="@style/TextViewWrapSmall"
+                android:layout_marginTop="5dip" />
+
+            <TextView
+                style="@style/TextViewWrapMed"
+                android:layout_marginTop="10dip"
+                android:text="Item Description:" />
+
+
+            <TextView
+                android:id="@+id/txtItemDesc"
+                style="@style/TextViewWrapSmall"
+                android:layout_marginTop="5dip" />
+
+            <TextView
+                style="@style/TextViewWrapMed"
+                android:layout_marginTop="10dip"
+                android:text="Price:" />
+
+
+            <TextView
+                android:id="@+id/txtCustomerName"
+                style="@style/TextViewWrapSmall"
+                android:layout_marginTop="5dip" />
+
+            <TextView
+                style="@style/TextViewWrapMed"
+                android:layout_marginTop="10dip"
+                android:text="Ordered Time:" />
+
+
+            <TextView
+                android:id="@+id/txtOrderedTime"
+                style="@style/TextViewWrapSmall"
+                android:layout_marginTop="5dip" />
+
+            <TextView
+                style="@style/TextViewWrapMed"
+                android:layout_marginTop="10dip"
+                android:text="Preparation Time:" />
+
+            <TextView
+                android:id="@+id/txtArrivalTime"
+                style="@style/TextViewWrapSmall"
+                android:layout_marginTop="5dip" />
+
+
+            <TextView
+                style="@style/TextViewWrapMed"
+                android:layout_marginTop="10dip"
+                android:text="Location:" />
+
+            <TextView
+                android:id="@+id/txtLocation"
+                style="@style/TextViewWrapSmall"
+                android:layout_marginTop="5dip" />
+
+
+            <Button
+                android:id="@+id/btnReOrder"
+                style="@style/TextViewStyleMedium"
+                android:layout_marginTop="10dip"
+                android:background="@color/purple"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="Re Order"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

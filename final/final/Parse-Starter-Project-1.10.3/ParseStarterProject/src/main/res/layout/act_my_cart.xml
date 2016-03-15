@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/inc_toolbar" />
+
+
+    <ListView
+        android:id="@+id/listMyCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/txtMyCart"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black_deep"
+        android:padding="10dip"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+
+    <Button
+        android:id="@+id/btnConfirm"
+        style="@style/TextViewStyleMedium"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dip"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="Place Order"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnClear"
+        style="@style/TextViewStyleMedium"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dip"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="clear"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include
+
+            layout="@layout/inc_toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearTop"
+        android:orientation="vertical"
+        android:padding="6dip">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Username"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Password"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="6dip">
+
+        <Button
+            android:id="@+id/login"
+            style="@style/TextViewStyleMedium"
+            android:background="@color/purple"
+            android:text="@string/LoginBtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/signup"
+            style="@style/TextViewStyleMedium"
+            android:layout_marginTop="10dip"
+            android:background="@color/purple"
+            android:text="@string/SignupBtn"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout><!-- From: file:/C:/Users/Sargam/Desktop/final/Parse-Starter-Project-1.10.3/ParseStarterProject/src/main/res/layout/loginsignup.xml -->

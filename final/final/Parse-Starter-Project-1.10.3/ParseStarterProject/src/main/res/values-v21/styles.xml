@@ -1,0 +1,195 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="myTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/myTheme.ActionBar</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="myTheme.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/purple</item>
+        <item name="android:titleTextStyle">@style/myTheme.ActionBar.Text</item>
+    </style>
+
+    <style name="myTheme.ActionBar.Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="android:colorPrimary">@color/purple_medium</item>
+        <item name="android:colorPrimaryDark">@color/purple</item>
+        <item name="android:colorAccent">@color/iron</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorHint">@color/black_lite</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorControlActivated">@color/purple</item>
+        <item name="colorControlHighlight">@color/purple</item>
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="android:textColorPrimary">@color/purple</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/purple</item>
+        <item name="android:textColor">@color/purple</item>
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="MyProgressDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:indeterminateTint">?attr/colorAccent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:indeterminateTintMode">src_in</item>
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <style name="TextViewStyleMedium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">8dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextViewStyleLarge" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">8dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextViewStyleSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">8dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextViewStyleSmallMultipleline" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">8dip</item>
+    </style>
+
+    <style name="TextViewReferral" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginBottom">10dip</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="TextViewReferralWrapContent" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="TextViewWrapMed" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextViewWrapSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextViewReferralCode" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="TextViewStyleSmallwithNoPadding" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black_deep</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextViewStyleMediumwithNoPadding" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black_deep</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ContactInfoEdt" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColorHint">#9c9c9c</item>
+
+    </style>
+
+    <style name="ContactInfoEdtNoMargin" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/rect_gray_filled</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColorHint">#9c9c9c</item>
+    </style>
+
+    <style name="HorizontalLine" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.1sp</item>
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+    <style name="VerticalLine" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">0.1sp </item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+    <style name="HorizontalLineBlack" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@color/black_deep</item>
+    </style>
+
+    <style name="TextViewSubItemWrapContent" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">#9c9c9c</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+
+</resources>
